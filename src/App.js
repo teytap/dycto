@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import Dycto from "./Dycto";
+import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSquareFacebook,
+  faSquareGithub,
+  faSquareInstagram,
+  faSquareTwitter,
+  faCodepen,
+} from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form className="form">
+        <div className="d-grid col-md-5 mx-auto">
+          <label for="exampleFormControlInput" className="form-label">
+            Make your vacabulary more colorful.
+          </label>
+          <input
+            type="search"
+            className="form-control"
+            placeholder="🔍"
+            autoFocus="on"
+          />
+        </div>
+      </form>
+      <FontAwesomeIcon icon={faCoffee} className="icons"></FontAwesomeIcon>
+      <FontAwesomeIcon
+        icon={faSquareFacebook}
+        className="icons"
+      ></FontAwesomeIcon>
+      <FontAwesomeIcon
+        icon={faSquareGithub}
+        className="icons"
+      ></FontAwesomeIcon>
+      <FontAwesomeIcon
+        icon={faSquareInstagram}
+        className="icons"
+      ></FontAwesomeIcon>
+      <FontAwesomeIcon
+        icon={faSquareTwitter}
+        className="icons"
+      ></FontAwesomeIcon>
+      <Dycto />
     </div>
   );
 }
