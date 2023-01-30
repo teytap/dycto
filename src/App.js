@@ -7,43 +7,51 @@ import {
   faSquareGithub,
   faSquareInstagram,
   faSquareTwitter,
-  faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
     <div className="App">
-      <form className="form">
-        <div className="d-grid col-md-5 mx-auto">
-          <label for="exampleFormControlInput" className="form-label">
-            Make your vacabulary more colorful.
-          </label>
-          <input
-            type="search"
-            className="form-control"
-            placeholder="🔍"
-            autoFocus="on"
-          />
-        </div>
-      </form>
-      <FontAwesomeIcon icon={faCoffee} className="icons"></FontAwesomeIcon>
-      <FontAwesomeIcon
-        icon={faSquareFacebook}
-        className="icons"
-      ></FontAwesomeIcon>
-      <FontAwesomeIcon
-        icon={faSquareGithub}
-        className="icons"
-      ></FontAwesomeIcon>
-      <FontAwesomeIcon
-        icon={faSquareInstagram}
-        className="icons"
-      ></FontAwesomeIcon>
-      <FontAwesomeIcon
-        icon={faSquareTwitter}
-        className="icons"
-      ></FontAwesomeIcon>
-      <Dycto />
+      <header></header>
+      <main>
+        <Dycto />
+      </main>
+
+      <footer className="text-center">
+        <FontAwesomeIcon icon={faCoffee} className="icons"></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={faSquareFacebook}
+          className="icons"
+        ></FontAwesomeIcon>
+
+        <FontAwesomeIcon
+          icon={faSquareInstagram}
+          className="icons"
+        ></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={faSquareTwitter}
+          className="icons"
+        ></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={faSquareGithub}
+          className="icons"
+        ></FontAwesomeIcon>
+        <p>
+          This project was coded by Mehtap Tataroğlu and is open-sourced on{" "}
+          <a
+            href="https://github.com/teytap/dycto"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github{" "}
+          </a>
+          and hosted on{" "}
+          <a href="netlify" target="_blank" rel="noreferrer">
+            Netlify
+          </a>
+          .
+        </p>
+      </footer>
     </div>
   );
 }
