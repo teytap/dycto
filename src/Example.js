@@ -1,11 +1,12 @@
 import React from "react";
-import { propTypes } from "react-bootstrap/esm/Image";
-export default function Example() {
-  if (propTypes.example && propTypes.exampl.length > 0) {
+
+export default function Example(props) {
+  //console.log(props);
+  if (props.example && props.example.length > 0) {
     return (
       <div className="example">
         <strong>Example:</strong>
-        {propTypes.example}
+        {props.example}
       </div>
     );
   } else {
