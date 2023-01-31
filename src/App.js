@@ -12,9 +12,12 @@ import {
 function App() {
   return (
     <div className="App">
-      <header></header>
+      <header>
+        <img src="/images/violet-logo.png" alt="dycto-logo" />
+        <hr />
+      </header>
       <main>
-        <Dycto />
+        <Dycto defaultWord="moonlight" />
       </main>
 
       <footer className="text-center">
@@ -46,7 +49,11 @@ function App() {
             Github{" "}
           </a>
           and hosted on{" "}
-          <a href="netlify" target="_blank" rel="noreferrer">
+          <a
+            href="https://kaleidoscopic-entremet-756dab.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Netlify
           </a>
           .
