@@ -46,7 +46,7 @@ export default function Dycto(props) {
 
   if (loaded) {
     return (
-      <div className="Dictionary">
+      <div className="Dictionary m-3">
         <form onSubmit={handleSubmit} className="word--form">
           <div className=" mx-auto">
             <label htmlFor="exampleFormControlInput" className="form-label">

@@ -1,18 +1,19 @@
 import Dycto from "./Dycto";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
     <div className="App">
       <header>
         <img src="/images/violet-logo.png" alt="dycto-logo" />
-        <hr />
       </header>
-      <main className="m-3">
+      <main>
         <Dycto defaultWord="moonlight" />
       </main>
 
-      <footer className="text-center mt-3">
+      <footer className="text-center mt-4">
         <p>
           This project was coded by Mehtap Tataroğlu and is open-sourced on{" "}
           <a
@@ -21,18 +22,11 @@ function App() {
             rel="noreferrer"
             className="attribution"
           >
-            Github{" "}
+            <FontAwesomeIcon
+              icon={faSquareGithub}
+              className="icons fs-4 text-white"
+            ></FontAwesomeIcon>
           </a>
-          and hosted on{" "}
-          <a
-            href="https://kaleidoscopic-entremet-756dab.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="attribution"
-          >
-            Netlify
-          </a>
-          .
         </p>
       </footer>
     </div>
