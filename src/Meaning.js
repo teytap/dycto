@@ -25,6 +25,9 @@ export default function Meaning(props) {
             </div>
           );
         })}
+        <div className="logo2 text-end">
+          <img src="../images/book-sub.png" alt="dictionary-logo" width="50" />
+        </div>
       </section>
     </div>
   );

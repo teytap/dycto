@@ -24,7 +24,7 @@ function App() {
           >
             <FontAwesomeIcon
               icon={faSquareGithub}
-              className="icons fs-4 text-white"
+              className="icons fs-4"
             ></FontAwesomeIcon>
           </a>
         </p>

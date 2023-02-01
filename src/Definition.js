@@ -15,6 +15,13 @@ export default function Definition(props) {
               </div>
             );
           })} */}
+          <div className="logo2 text-end">
+            <img
+              src="../images/book-sub.png"
+              alt="dictionary-logo"
+              width="50"
+            />
+          </div>
         </section>
 
         {props.definition.meanings.map((meaning, i) => {

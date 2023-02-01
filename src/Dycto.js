@@ -46,7 +46,7 @@ export default function Dycto(props) {
 
   if (loaded) {
     return (
-      <div className="Dictionary m-3">
+      <div className="Dycto m-3">
         <form onSubmit={handleSubmit} className="word--form">
           <div className=" mx-auto">
             <label htmlFor="exampleFormControlInput" className="form-label">
@@ -65,6 +65,13 @@ export default function Dycto(props) {
               autoFocus="on"
               onChange={handleChange}
               defaultValue={props.defaultWord}
+            />
+          </div>
+          <div className="logo2 text-end">
+            <img
+              src="../images/book-sub.png"
+              alt="dictionary-logo"
+              width="50"
             />
           </div>
         </form>
