@@ -24,6 +24,8 @@ export default function Phonetic(props) {
               </a>
             </div>
           );
+        } else {
+          return null;
         }
       })}
     </div>
