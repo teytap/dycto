@@ -8,13 +8,18 @@ export default function Phonetic(props) {
       {props.phonetic.map((p, i) => {
         if (p.audio && p.audio.length > 0) {
           return (
-            <div key={i} className="phonetic">
+            <div key={i} className="phonetic pb-4">
               <FontAwesomeIcon
                 icon={faVolumeHigh}
                 className="icons volume"
               ></FontAwesomeIcon>
 
-              <a href={p.audio} target="_blank" rel="noreferrer">
+              <a
+                href={p.audio}
+                target="_blank"
+                rel="noreferrer"
+                className="attribution"
+              >
                 {p.text}
               </a>
             </div>

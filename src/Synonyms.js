@@ -7,7 +7,7 @@ export default function Synonyms(props) {
         return (
           <ul key={i}>
             <li>
-              <strong>Synoym:</strong>
+              <strong>Synoym: </strong>
               {synonym}
             </li>
           </ul>

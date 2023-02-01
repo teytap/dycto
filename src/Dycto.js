@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import Definition from "./Definition";
 import Photos from "./Photos";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dycto(props) {
   let [word, setWord] = useState(props.defaultWord);
@@ -46,13 +48,19 @@ export default function Dycto(props) {
     return (
       <div className="Dictionary">
         <form onSubmit={handleSubmit} className="word--form">
-          <div className="d-grid col-md-5 mx-auto">
+          <div className=" mx-auto">
             <label htmlFor="exampleFormControlInput" className="form-label">
-              What word do you want to look up?
+              <h5>
+                <FontAwesomeIcon
+                  icon={faMagnifyingGlass}
+                  className="icons"
+                ></FontAwesomeIcon>{" "}
+                What word do you want to look up?
+              </h5>
             </label>
             <input
               type="search"
-              className="form-control"
+              className="form-control mb-4"
               placeholder="🔍"
               autoFocus="on"
               onChange={handleChange}

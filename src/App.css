@@ -6,14 +6,12 @@ body {
   background-color: white;
   background-image: url("../public/images/ffflux.svg");
   background-size: cover;
-
   margin-bottom: 60px;
   font-family: var(--default-font-family);
 }
 header {
   background-color: white;
   height: 150px;
-  /*box-shadow: 0 14px 3px -3px var(--primary-color);*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,12 +29,17 @@ section {
   line-height: 2;
   max-width: 800px;
 }
+.phonetic {
+  margin-bottom: 0px;
+}
+
 .photos {
   display: flex;
   flex-wrap: wrap;
   max-width: 800px;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .photos img {
   object-fit: cover;
@@ -50,5 +53,14 @@ section {
 }
 .definition--word {
   font-weight: bold;
+  color: blueviolet;
+}
+.example {
+  font-style: italic;
+}
+.icons {
+  color: blueviolet;
+}
+.attribution {
   color: blueviolet;
 }

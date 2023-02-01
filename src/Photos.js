@@ -7,7 +7,12 @@ export default function Photos(props) {
           {props.photos.map(function (photo, i) {
             return (
               <div className="col-md-3" key={i}>
-                <a href={photo.src.original} target="_blank" rel="noreferrer">
+                <a
+                  href={photo.src.original}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="attribution"
+                >
                   <img
                     className="img-fluid img-thumbnail rounded text-center"
                     src={photo.src.small}
