@@ -3,10 +3,10 @@
   --default-font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: white;
+  background-image: url("../public/images/ffflux.svg");
 
-  /* background-image: url("../public/images/ffflux.svg");
-  background-size: cover; */
+  background-size: cover;
+  background-color: red;
   margin-bottom: 60px;
   font-family: var(--default-font-family);
 }
@@ -16,7 +16,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0px 0px 50px 50px;
   box-shadow: 2px 2px 15px grey;
+}
+footer {
+  background-color: white;
+  box-shadow: 2px 2px 15px grey;
+  border-radius: 50px 50px 0px 0px;
+  height: 50px;
+  padding: 10px;
 }
 
 .word--form,
@@ -26,7 +34,7 @@ section {
   /* border: 2px solid var(--primary-color); */
   background-color: #ffffff;
   box-shadow: 2px 2px 15px grey;
-  border-radius: 0px 40px;
+  border-radius: 0px 50px;
   margin-top: 20px;
   line-height: 2;
   max-width: 800px;
