@@ -15,7 +15,7 @@ function App() {
 
       <footer className="text-center mt-4">
         <p>
-          This project was coded by Mehtap Tataroğlu and is open-sourced on{" "}
+          Project by Mehtap T. and is open-sourced on{" "}
           <a
             href="https://github.com/teytap/dycto"
             target="_blank"
