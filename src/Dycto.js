@@ -18,15 +18,18 @@ export default function Dycto(props) {
 
   function showPhoto(response) {
     setPhotos(response.data.photos);
+    console.log(response.data);
   }
 
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrl).then(showDefinition);
 
-    let photoApiKey = `563492ad6f91700001000001ee43e0b3e1ec4523a5985d5e047e5351`;
+    //let photoApiKey = `563492ad6f91700001000001ee43e0b3e1ec4523a5985d5e047e5351`;
+    let photoApiKey = `0LiR2EkIBf400DywjEdaNl6YwiJEDPD83QOzTCvJEIZFXzlfE62j6NDh`;
     let photoUrl = `https://api.pexels.com/v1/search?query=${word}&per_page=16`;
-    let headers = { Authorization: `Bearer ${photoApiKey}` };
+    //let headers = { Authorization: `Bearer ${photoApiKey}` };
+    let headers = { Authorization: photoApiKey };
     axios.get(photoUrl, { headers: headers }).then(showPhoto);
   }
 
