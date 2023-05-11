@@ -1,1 +1,2 @@
-https://kaleidoscopic-entremet-756dab.netlify.app/
+
+https://kaleidoscopic-dictionary.netlify.app/
